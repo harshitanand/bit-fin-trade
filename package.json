@@ -1,0 +1,46 @@
+{
+  "name": "bitfin-trade",
+  "version": "1.0.0",
+  "description": "bitfinex trade order matching and placement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:server",
+    "prettier": "prettier --single-quote --trailing-comma es5 --print-width 120 --write .",
+    "precommit": "lint-staged"
+  },
+  "keywords": [
+    "NodeJs",
+    "Grenache"
+  ],
+  "author": "Harshit Anand <harshitanand94@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "grenache-grape": "^0.9.12",
+    "grenache-nodejs-http": "^0.7.13",
+    "grenache-nodejs-link": "^1.0.0",
+    "grenache-nodejs-ws": "^0.7.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add"
+    ],
+    ".eslintrc": [
+      "npm run prettier -- --parser json",
+      "git add"
+    ],
+    "*.json": [
+      "npm run prettier",
+      "git add"
+    ]
+  }
+}

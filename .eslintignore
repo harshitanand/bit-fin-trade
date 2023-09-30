@@ -1,0 +1,18 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+.idea
+.project
+.strong-pm
+.env
+.vscode
+client/dist
+client/.sass-cache
+client/.tmp
+client/bower_components
+client/docs
+client-admin/dist
+client-admin/.sass-cache
+client-admin/.tmp
+client-admin/bower_components
+client-admin/docs
+coverage
